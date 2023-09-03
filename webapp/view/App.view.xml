@@ -1,0 +1,21 @@
+<mvc:View
+  controllerName="ui5.calculator.controller.App" 
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns="sap.m">
+  
+  <App>
+    <Page title="Calculator">
+      <VBox alignItems="Center" justifyContent="Center">
+        <Input id="input1" type="Number" placeholder="First number" width="200px"/>
+        <Input id="input2" type="Number" placeholder="Second number" width="200px"/>
+        <HBox justifyContent="Center">
+          <Button text="Add" press="onSumPress"/>
+          <Button text="Subtract" press="onSubtractPress"/>
+          <Button text="Multiply" press="onMultiplyPress"/>
+          <Button text="Divide" press="onDividePress"/>
+        </HBox>
+        <Text id="resultText" text="Result: 0" width="200px" textAlign="Center"/>
+      </VBox>
+    </Page>
+  </App>
+</mvc:View>
